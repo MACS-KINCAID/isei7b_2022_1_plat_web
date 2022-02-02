@@ -1,0 +1,21 @@
+Todo en react son componentes 
+  Para definir un componente usamos 
+  a) "function NombreComponente(props){}" <- No tiene ninguna lógica solo muestra HTML
+  b) "class NombreComponente extends React.Component{}" <- Puede tener lógica, constructores, state etc
+
+Funcion render (return)<- Permite agregar elementos HTML a nuestra página
+                       <- Todo lo que este entre llaves {} se interpreta como Javascript
+Constructor <- Función que se invoca (ejecuta) cuando se invoca la instancia (Ej inicializar valores, invocar funciones, recibir props del componente padre)
+
+this <- Hace referencia al componente en el cuál nos encontramos
+this.state <- (Json) Variables que solo conoce el componente en donde se definen
+this.props <- (Json) Variables que recibimos de el componente padre
+this.setState <- Permite actualizar los valores de state (permite hacer tracking de cambios (interno de React));
+
+
+-- Extra --
+if(0)     // False
+if(false) // False
+if(null)  // False
+if("")    // *False
+
